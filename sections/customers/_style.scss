@@ -1,0 +1,114 @@
+#Customers {
+  margin-bottom: 200px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+
+        .up {
+          display: flex;
+          gap: 7px;
+
+          h1 {
+            font-weight: 600px;
+            font-size: 48px;
+          }
+
+          p {
+            color: #98989a;
+            font-weight: 600px;
+            font-size: 18px;
+            padding-top: 7px;
+          }
+        }
+
+        span {
+          color: #656567;
+          font-weight: 400;
+          font-style: 18px;
+        }
+      }
+
+      .right {
+        .view {
+          background-color: #ffd400;
+          padding: 18px 30px;
+          border: none;
+          border-radius: 30px;
+        }
+      }
+    }
+
+    .customer {
+      background-color: #f7f7f8;
+      border-radius: 20px;
+      padding: 24px;
+      display: flex;
+      gap: 20px;
+      .box {
+        padding: 40px;
+        background-color: #fff;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .up {
+          display: flex;
+          justify-content: space-between;
+
+          .line {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            div {
+              display: flex;
+              flex-direction: column;
+              gap: 6px;
+            }
+          }
+        }
+      }
+      span {
+        color: #4c4c4d;
+        font-weight: 400;
+        font-style: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1090px) {
+  #Customers {
+    .container {
+      .title {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .left {
+          .up {
+            display: flex;
+            flex-direction: column-reverse;
+          }
+        }
+      }
+
+      .customer {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  }
+}
